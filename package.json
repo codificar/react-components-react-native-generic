@@ -12,6 +12,13 @@
       "type": "git",
       "url": "git+https://git.codificar.com.br/react-components/react-native-generic"
     },
+    
+    "dependencies": {
+        "moment": "^2.21.0"
+    },
+    "peerDependencies": {
+        "react-native": ">=0.47.0"
+    },
 
     "author": "Codificar",
 
