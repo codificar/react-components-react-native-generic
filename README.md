@@ -2,9 +2,8 @@
 A generic component to react native
 
 ## Install
-
-```bash
 add in package.json:
+```bash
 "PROJECTNAME": "git+https://GITLAB-USER:PASSWORD@git.codificar.com.br/react-components/PROJECTNAME.git",
 ```
 
