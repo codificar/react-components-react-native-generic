@@ -4,7 +4,7 @@ A generic component to react native
 ## Install
 add in package.json:
 ```bash
-"PROJECTNAME": "git+https://GITLAB-USER:PASSWORD@git.codificar.com.br/react-components/PROJECTNAME.git",
+"PROJECTNAME": "git+https://libs:ofImhksJ@git.codificar.com.br/react-components/PROJECTNAME.git",
 ```
 
 ## Usage
