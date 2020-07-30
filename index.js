@@ -1,34 +1,39 @@
 import React, { Component } from 'react';
-import { 
-    View, 
-    Text, 
-    StyleSheet, 
+import PropTypes from 'prop-types';
+import {
+    View,
+    Text,
+    StyleSheet,
 } from "react-native";
 
 class GenericComponent extends Component {
+    static propTypes = {
+        route: PropTypes.string.isRequired,
+        providerId: PropTypes.number.isRequired,
+        token: PropTypes.string.isRequired,
+        color: PropTypes.string.isRequired
+    }
+    static defaultProps = {
+        color: 'blue',
+    }
 
     constructor(props) {
         super(props);
-        this.state = {
-
-            route: this.props.route,
-            providerId: this.props.providerId,
-            token: this.props.token,
-
-        }
     }
 
     componentDidMount() {
         console.log("Entered the screen")
     }
 
-    render() {       
-     
+    render() {
+        const { color, route, providerId, token } = this.props;
         return (
             <View style={styles.body}>
-                <Text>{this.state.route}</Text>
-                <Text>{this.state.providerId}</Text>
-                <Text>{this.state.token}</Text>
+                <Text style={{ color: color }}>
+                    {route}
+                </Text>
+                <Text>{providerId}</Text>
+                <Text>{token}</Text>
             </View>
         )
     }
@@ -36,7 +41,7 @@ class GenericComponent extends Component {
 
 const styles = StyleSheet.create({
     body: {
-        flex: 1, 
+        flex: 1,
         backgroundColor: 'white'
     }
 });
